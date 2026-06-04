@@ -31,9 +31,5 @@ A lightweight, modular CSS framework for rapid development.
 ```
 npm install neutron-css
 
-```
-
-```
-
 
 ```
