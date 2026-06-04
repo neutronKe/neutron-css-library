@@ -1,0 +1,375 @@
+/* ========================================
+   POSITION UTILITIES - Neutron CSS
+   ======================================== */
+
+/* Position Types */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.static {
+  position: static;
+}
+
+/* Positioning Coordinates */
+.top-0 {
+  top: 0;
+}
+.top-auto {
+  top: auto;
+}
+.right-0 {
+  right: 0;
+}
+.right-auto {
+  right: auto;
+}
+.bottom-0 {
+  bottom: 0;
+}
+.bottom-auto {
+  bottom: auto;
+}
+.left-0 {
+  left: 0;
+}
+.left-auto {
+  left: auto;
+}
+
+/* Pixel-based Positioning */
+.top-1 {
+  top: var(--space-1);
+}
+.top-2 {
+  top: var(--space-2);
+}
+.top-3 {
+  top: var(--space-3);
+}
+.top-4 {
+  top: var(--space-4);
+}
+.top-5 {
+  top: var(--space-5);
+}
+.top-6 {
+  top: var(--space-6);
+}
+.top-8 {
+  top: var(--space-8);
+}
+.top-10 {
+  top: var(--space-10);
+}
+.top-12 {
+  top: var(--space-12);
+}
+
+.right-1 {
+  right: var(--space-1);
+}
+.right-2 {
+  right: var(--space-2);
+}
+.right-3 {
+  right: var(--space-3);
+}
+.right-4 {
+  right: var(--space-4);
+}
+.right-5 {
+  right: var(--space-5);
+}
+.right-6 {
+  right: var(--space-6);
+}
+.right-8 {
+  right: var(--space-8);
+}
+.right-10 {
+  right: var(--space-10);
+}
+.right-12 {
+  right: var(--space-12);
+}
+
+.bottom-1 {
+  bottom: var(--space-1);
+}
+.bottom-2 {
+  bottom: var(--space-2);
+}
+.bottom-3 {
+  bottom: var(--space-3);
+}
+.bottom-4 {
+  bottom: var(--space-4);
+}
+.bottom-5 {
+  bottom: var(--space-5);
+}
+.bottom-6 {
+  bottom: var(--space-6);
+}
+.bottom-8 {
+  bottom: var(--space-8);
+}
+.bottom-10 {
+  bottom: var(--space-10);
+}
+.bottom-12 {
+  bottom: var(--space-12);
+}
+
+.left-1 {
+  left: var(--space-1);
+}
+.left-2 {
+  left: var(--space-2);
+}
+.left-3 {
+  left: var(--space-3);
+}
+.left-4 {
+  left: var(--space-4);
+}
+.left-5 {
+  left: var(--space-5);
+}
+.left-6 {
+  left: var(--space-6);
+}
+.left-8 {
+  left: var(--space-8);
+}
+.left-10 {
+  left: var(--space-10);
+}
+.left-12 {
+  left: var(--space-12);
+}
+
+/* Percentage-based Positioning */
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.inset-auto {
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+
+.inset-1\/2 {
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%;
+}
+
+/* Z-Index */
+.z-0 {
+  z-index: 0;
+}
+.z-10 {
+  z-index: 10;
+}
+.z-20 {
+  z-index: 20;
+}
+.z-30 {
+  z-index: 30;
+}
+.z-40 {
+  z-index: 40;
+}
+.z-50 {
+  z-index: 50;
+}
+.z-auto {
+  z-index: auto;
+}
+.z-999 {
+  z-index: 999;
+}
+.z-9999 {
+  z-index: 9999;
+}
+
+/* Sticky Positioning with Top Offset */
+.sticky-top-0 {
+  position: sticky;
+  top: 0;
+}
+
+.sticky-top-1 {
+  position: sticky;
+  top: var(--space-1);
+}
+
+.sticky-top-2 {
+  position: sticky;
+  top: var(--space-2);
+}
+
+.sticky-top-3 {
+  position: sticky;
+  top: var(--space-3);
+}
+
+.sticky-top-4 {
+  position: sticky;
+  top: var(--space-4);
+}
+
+/* Centering with Absolute */
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.absolute-center-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.absolute-center-y {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Fixed Positioning */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Responsive Position Utilities */
+@media (min-width: 640px) {
+  .sm\:relative {
+    position: relative;
+  }
+  .sm\:absolute {
+    position: absolute;
+  }
+  .sm\:fixed {
+    position: fixed;
+  }
+  .sm\:sticky {
+    position: sticky;
+  }
+  .sm\:top-0 {
+    top: 0;
+  }
+  .sm\:right-0 {
+    right: 0;
+  }
+  .sm\:bottom-0 {
+    bottom: 0;
+  }
+  .sm\:left-0 {
+    left: 0;
+  }
+  .sm\:z-10 {
+    z-index: 10;
+  }
+  .sm\:z-20 {
+    z-index: 20;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:relative {
+    position: relative;
+  }
+  .md\:absolute {
+    position: absolute;
+  }
+  .md\:fixed {
+    position: fixed;
+  }
+  .md\:sticky {
+    position: sticky;
+  }
+  .md\:top-0 {
+    top: 0;
+  }
+  .md\:right-0 {
+    right: 0;
+  }
+  .md\:bottom-0 {
+    bottom: 0;
+  }
+  .md\:left-0 {
+    left: 0;
+  }
+  .md\:z-10 {
+    z-index: 10;
+  }
+  .md\:z-20 {
+    z-index: 20;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:relative {
+    position: relative;
+  }
+  .lg\:absolute {
+    position: absolute;
+  }
+  .lg\:fixed {
+    position: fixed;
+  }
+  .lg\:sticky {
+    position: sticky;
+  }
+  .lg\:top-0 {
+    top: 0;
+  }
+  .lg\:right-0 {
+    right: 0;
+  }
+  .lg\:bottom-0 {
+    bottom: 0;
+  }
+  .lg\:left-0 {
+    left: 0;
+  }
+  .lg\:z-10 {
+    z-index: 10;
+  }
+  .lg\:z-20 {
+    z-index: 20;
+  }
+}

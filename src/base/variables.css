@@ -1,0 +1,85 @@
+:root {
+  /* ===== COLOR SYSTEM ===== */
+  /* Primary Colors */
+  --neutron-primary: #3b82f6;
+  --neutron-primary-dark: #2563eb;
+  --neutron-primary-light: #60a5fa;
+
+  /* Secondary Colors */
+  --neutron-secondary: #8b5cf6;
+  --neutron-secondary-dark: #7c3aed;
+  --neutron-secondary-light: #a78bfa;
+
+  /* Success / Error / Warning */
+  --neutron-success: #10b981;
+  --neutron-error: #ef4444;
+  --neutron-warning: #f59e0b;
+  --neutron-info: #06b6d4;
+
+  /* Neutron Brand Signature */
+  --neutron-nuclear: #10b981;
+  --neutron-nuclear-glow: #34d399;
+  --neutron-nuclear-dark: #059669;
+
+  /* Neutrals */
+  --neutron-white: #ffffff;
+  --neutron-black: #111827;
+  --neutron-gray-50: #f9fafb;
+  --neutron-gray-100: #f3f4f6;
+  --neutron-gray-200: #e5e7eb;
+  --neutron-gray-300: #d1d5db;
+  --neutron-gray-400: #9ca3af;
+  --neutron-gray-500: #6b7280;
+  --neutron-gray-600: #4b5563;
+  --neutron-gray-700: #374151;
+  --neutron-gray-800: #1f2937;
+  --neutron-gray-900: #111827;
+
+  /* ===== SPACING SYSTEM ===== */
+  --space-0: 0;
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px */
+  --space-16: 4rem; /* 64px */
+  --space-20: 5rem; /* 80px */
+  --space-24: 6rem; /* 96px */
+
+  /* ===== TYPOGRAPHY ===== */
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  --font-mono: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", monospace;
+
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+
+  /* ===== BORDERS & SHADOWS ===== */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+
+  /* ===== TRANSITIONS ===== */
+  --transition-fast: 150ms;
+  --transition-normal: 300ms;
+  --transition-slow: 500ms;
+}

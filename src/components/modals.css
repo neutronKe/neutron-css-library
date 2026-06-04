@@ -1,0 +1,243 @@
+/* ========================================
+   MODALS - Neutron CSS
+   ======================================== */
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Modal Container */
+.modal {
+  background: var(--neutron-white);
+  border-radius: var(--radius-lg);
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  transform: scale(0.9);
+  transition: transform var(--transition-normal);
+  box-shadow: var(--shadow-xl);
+}
+
+.modal-overlay.active .modal {
+  transform: scale(1);
+}
+
+/* Modal Sizes */
+.modal-sm {
+  max-width: 300px;
+}
+
+.modal-md {
+  max-width: 500px;
+}
+
+.modal-lg {
+  max-width: 800px;
+}
+
+.modal-xl {
+  max-width: 1140px;
+}
+
+.modal-full {
+  width: 95%;
+  max-width: none;
+}
+
+/* Modal Header */
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-6);
+  border-bottom: 1px solid var(--neutron-gray-200);
+}
+
+.modal-title {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  margin: 0;
+  color: var(--neutron-gray-900);
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: var(--text-2xl);
+  cursor: pointer;
+  color: var(--neutron-gray-500);
+  transition: color var(--transition-fast);
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+}
+
+.modal-close:hover {
+  color: var(--neutron-gray-900);
+  background: var(--neutron-gray-100);
+}
+
+/* Modal Body */
+.modal-body {
+  padding: var(--space-6);
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Modal Footer */
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-6);
+  border-top: 1px solid var(--neutron-gray-200);
+}
+
+/* Modal Variants */
+.modal-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Modal without Animation */
+.modal-no-animation {
+  transition: none;
+}
+
+/* Scrollable Modal Body */
+.modal-body-scrollable {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+/* Fullscreen Modal */
+.modal-fullscreen {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  border-radius: 0;
+}
+
+.modal-fullscreen .modal-body {
+  flex: 1;
+}
+
+/* Modal Colors */
+.modal-primary .modal-header {
+  background: var(--neutron-primary);
+  color: white;
+}
+
+.modal-primary .modal-title {
+  color: white;
+}
+
+.modal-primary .modal-close {
+  color: white;
+}
+
+.modal-primary .modal-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.modal-success .modal-header {
+  background: var(--neutron-success);
+  color: white;
+}
+
+.modal-error .modal-header {
+  background: var(--neutron-error);
+  color: white;
+}
+
+.modal-warning .modal-header {
+  background: var(--neutron-warning);
+  color: var(--neutron-gray-900);
+}
+
+/* Modal Without Header */
+.modal-no-header .modal-body {
+  padding-top: var(--space-6);
+}
+
+/* Modal Without Footer */
+.modal-no-footer .modal-body {
+  padding-bottom: var(--space-6);
+}
+
+/* Centered Modal Actions */
+.modal-actions-centered {
+  justify-content: center;
+}
+
+/* Modal Animation Variants */
+.modal-fade-in {
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-slide-in {
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.modal-zoom-in {
+  animation: modalZoomIn 0.3s ease-out;
+}
+
+@keyframes modalZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

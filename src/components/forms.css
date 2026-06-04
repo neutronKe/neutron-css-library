@@ -1,0 +1,295 @@
+/* ========================================
+   FORMS - Neutron CSS
+   ======================================== */
+
+/* Form Group */
+.form-group {
+  margin-bottom: var(--space-4);
+}
+
+/* Labels */
+.form-label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-weight: 500;
+  color: var(--neutron-gray-700);
+}
+
+.form-label-required::after {
+  content: "*";
+  color: var(--neutron-error);
+  margin-left: var(--space-1);
+}
+
+/* Input Fields */
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-base);
+  font-family: var(--font-sans);
+  color: var(--neutron-gray-900);
+  background-color: var(--neutron-white);
+  border: 1px solid var(--neutron-gray-300);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--neutron-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Input Sizes */
+.form-input-sm {
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--text-sm);
+}
+
+.form-input-lg {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-lg);
+}
+
+/* Input States */
+.form-input-error {
+  border-color: var(--neutron-error);
+}
+
+.form-input-error:focus {
+  border-color: var(--neutron-error);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.form-input-success {
+  border-color: var(--neutron-success);
+}
+
+.form-input-success:focus {
+  border-color: var(--neutron-success);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* Disabled Input */
+.form-input:disabled,
+.form-select:disabled,
+.form-textarea:disabled {
+  background-color: var(--neutron-gray-100);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Readonly Input */
+.form-input-readonly {
+  background-color: var(--neutron-gray-50);
+  cursor: default;
+}
+
+/* Textarea */
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Select */
+.form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+  background-position: right var(--space-3) center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: var(--space-8);
+}
+
+/* Checkbox & Radio */
+.form-checkbox,
+.form-radio {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+  cursor: pointer;
+}
+
+.form-checkbox input,
+.form-radio input {
+  width: 1.125rem;
+  height: 1.125rem;
+  cursor: pointer;
+  accent-color: var(--neutron-primary);
+}
+
+.form-checkbox label,
+.form-radio label {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+/* Inline Checkbox/Radio Group */
+.form-check-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+/* Help Text */
+.form-help {
+  display: block;
+  margin-top: var(--space-1);
+  font-size: var(--text-sm);
+  color: var(--neutron-gray-500);
+}
+
+.form-error-text {
+  color: var(--neutron-error);
+}
+
+.form-success-text {
+  color: var(--neutron-success);
+}
+
+/* Input Group (with addon) */
+.form-input-group {
+  display: flex;
+  align-items: stretch;
+}
+
+.form-input-group .form-input {
+  flex: 1;
+}
+
+.form-input-addon {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-3);
+  background-color: var(--neutron-gray-100);
+  border: 1px solid var(--neutron-gray-300);
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+}
+
+.form-input-addon-left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
+
+.form-input-group .form-input-left {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-input-addon-right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+
+.form-input-group .form-input-right {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Range Input */
+.form-range {
+  width: 100%;
+  height: 6px;
+  -webkit-appearance: none;
+  background: var(--neutron-gray-200);
+  border-radius: var(--radius-full);
+}
+
+.form-range:focus {
+  outline: none;
+}
+
+.form-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--neutron-primary);
+  cursor: pointer;
+}
+
+.form-range::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Switch Toggle */
+.form-switch {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  cursor: pointer;
+}
+
+.form-switch input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-slider {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  background-color: var(--neutron-gray-300);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+}
+
+.switch-slider::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform var(--transition-fast);
+}
+
+.form-switch input:checked + .switch-slider {
+  background-color: var(--neutron-primary);
+}
+
+.form-switch input:checked + .switch-slider::before {
+  transform: translateX(24px);
+}
+
+/* File Input */
+.form-file {
+  position: relative;
+  display: inline-block;
+}
+
+.form-file-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.form-file-label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--neutron-gray-100);
+  border: 1px solid var(--neutron-gray-300);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.form-file-label:hover {
+  background-color: var(--neutron-gray-200);
+}

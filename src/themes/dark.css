@@ -1,0 +1,297 @@
+/* ========================================
+   DARK THEME - Neutron CSS
+   ======================================== */
+
+/* Dark Mode Variables */
+.dark {
+  /* Background Colors */
+  --neutron-white: #1e293b;
+  --neutron-gray-50: #0f172a;
+  --neutron-gray-100: #1e293b;
+  --neutron-gray-200: #334155;
+  --neutron-gray-300: #475569;
+  --neutron-gray-400: #64748b;
+  --neutron-gray-500: #94a3b8;
+  --neutron-gray-600: #cbd5e1;
+  --neutron-gray-700: #e2e8f0;
+  --neutron-gray-800: #f1f5f9;
+  --neutron-gray-900: #f8fafc;
+  --neutron-black: #ffffff;
+
+  /* Surface Colors */
+  --neutron-surface: #1e293b;
+  --neutron-surface-hover: #334155;
+
+  /* Border Colors */
+  --neutron-border: #334155;
+}
+
+/* Dark Mode Body */
+.dark body {
+  background-color: var(--neutron-gray-50);
+  color: var(--neutron-gray-800);
+}
+
+/* Dark Mode Cards */
+.dark .card {
+  background: var(--neutron-surface);
+  border-color: var(--neutron-border);
+}
+
+.dark .card-1,
+.dark .card-2,
+.dark .card-3,
+.dark .card-4,
+.dark .card-5,
+.dark .card-6,
+.dark .card-7,
+.dark .card-8 {
+  background: var(--neutron-surface);
+  border-color: var(--neutron-border);
+}
+
+.dark .card-4 {
+  background: linear-gradient(
+    135deg,
+    var(--neutron-surface),
+    var(--neutron-gray-100)
+  );
+}
+
+.dark .card-7 {
+  background: rgba(30, 41, 59, 0.9);
+}
+
+.dark .card-header,
+.dark .card-footer {
+  border-color: var(--neutron-border);
+}
+
+/* Dark Mode Buttons */
+.dark .btn-light {
+  background: var(--neutron-gray-700);
+  color: var(--neutron-gray-900);
+}
+
+.dark .btn-light:hover {
+  background: var(--neutron-gray-600);
+}
+
+.dark .btn-ghost {
+  color: var(--neutron-gray-400);
+}
+
+.dark .btn-ghost:hover {
+  background: var(--neutron-gray-800);
+  color: var(--neutron-white);
+}
+
+.dark .btn-outline-primary {
+  color: var(--neutron-primary-light);
+  border-color: var(--neutron-primary-light);
+}
+
+.dark .btn-outline-secondary {
+  color: var(--neutron-secondary-light);
+  border-color: var(--neutron-secondary-light);
+}
+
+/* Dark Mode Forms */
+.dark .form-input,
+.dark .form-select,
+.dark .form-textarea {
+  background-color: var(--neutron-surface);
+  border-color: var(--neutron-border);
+  color: var(--neutron-gray-800);
+}
+
+.dark .form-input:focus,
+.dark .form-select:focus,
+.dark .form-textarea:focus {
+  border-color: var(--neutron-primary-light);
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
+}
+
+.dark .form-label {
+  color: var(--neutron-gray-600);
+}
+
+.dark .form-help {
+  color: var(--neutron-gray-500);
+}
+
+/* Dark Mode Alerts */
+.dark .alert-success {
+  background: rgba(16, 185, 129, 0.15);
+  color: #6ee7b7;
+}
+
+.dark .alert-error {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+}
+
+.dark .alert-warning {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fcd34d;
+}
+
+.dark .alert-info {
+  background: rgba(6, 182, 212, 0.15);
+  color: #67e8f9;
+}
+
+.dark .alert-primary {
+  background: rgba(59, 130, 246, 0.15);
+  color: #93c5fd;
+}
+
+/* Dark Mode Modal */
+.dark .modal {
+  background: var(--neutron-surface);
+}
+
+.dark .modal-header,
+.dark .modal-footer {
+  border-color: var(--neutron-border);
+}
+
+.dark .modal-close {
+  color: var(--neutron-gray-500);
+}
+
+.dark .modal-close:hover {
+  background: var(--neutron-gray-800);
+  color: var(--neutron-gray-200);
+}
+
+/* Dark Mode Navigation */
+.dark .navbar {
+  background: var(--neutron-surface);
+  border-color: var(--neutron-border);
+}
+
+.dark .nav-link {
+  color: var(--neutron-gray-400);
+}
+
+.dark .nav-link:hover {
+  background: var(--neutron-gray-800);
+  color: var(--neutron-primary-light);
+}
+
+.dark .dropdown-menu {
+  background: var(--neutron-surface);
+  border-color: var(--neutron-border);
+}
+
+.dark .dropdown-item {
+  color: var(--neutron-gray-400);
+}
+
+.dark .dropdown-item:hover {
+  background: var(--neutron-gray-800);
+  color: var(--neutron-primary-light);
+}
+
+/* Dark Mode Pagination */
+.dark .page-link {
+  color: var(--neutron-gray-400);
+}
+
+.dark .page-link:hover {
+  background: var(--neutron-gray-800);
+  color: var(--neutron-primary-light);
+}
+
+.dark .page-item.active .page-link {
+  background: var(--neutron-primary);
+  color: white;
+}
+
+/* Dark Mode Tabs */
+.dark .tabs {
+  border-color: var(--neutron-border);
+}
+
+.dark .tab {
+  color: var(--neutron-gray-400);
+}
+
+.dark .tab:hover {
+  color: var(--neutron-primary-light);
+}
+
+.dark .tab.active {
+  color: var(--neutron-primary-light);
+  border-color: var(--neutron-primary-light);
+}
+
+/* Dark Mode Sidebar */
+.dark .sidebar {
+  background: var(--neutron-surface);
+  border-color: var(--neutron-border);
+}
+
+.dark .sidebar-link {
+  color: var(--neutron-gray-400);
+}
+
+.dark .sidebar-link:hover {
+  background: var(--neutron-gray-800);
+  color: var(--neutron-primary-light);
+}
+
+/* Dark Mode Code */
+.dark code {
+  background: var(--neutron-gray-800);
+  color: var(--neutron-gray-200);
+}
+
+.dark pre {
+  background: var(--neutron-gray-900);
+  color: var(--neutron-gray-100);
+}
+
+/* Dark Mode Typography */
+.dark .text-muted {
+  color: var(--neutron-gray-500);
+}
+
+/* Dark Mode Borders */
+.dark .border,
+.dark .border-top,
+.dark .border-bottom,
+.dark .border-left,
+.dark .border-right {
+  border-color: var(--neutron-border) !important;
+}
+
+/* Dark Mode Table (if used) */
+.dark table {
+  background: var(--neutron-surface);
+}
+
+.dark th,
+.dark td {
+  border-color: var(--neutron-border);
+}
+
+/* Dark Mode Scrollbar */
+.dark ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: var(--neutron-gray-100);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--neutron-gray-600);
+  border-radius: var(--radius-full);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--neutron-gray-500);
+}

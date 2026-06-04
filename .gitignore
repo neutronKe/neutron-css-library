@@ -1,0 +1,75 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.wrangler/
+
+*.min.js
+*.css.map
+*.js.map
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.suo
+*.user
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.tmp
+
+# Testing
+coverage/
+.nyc_output/
+*.test.js
+*.spec.js
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Documentation (optional - if generated)
+docs/_site/
+docs/.vitepress/dist/
+
+# CDN / Cache
+.cdn/
+.cache/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Project specific (minified CSS )
+# neutron.min.css  
+# dist/neutron.min.css  node_modules/

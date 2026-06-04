@@ -1,0 +1,76 @@
+/* ========================================
+   NEUTRON CSS v1.0.0
+   Lightweight Modular CSS Framework
+   Created by: Darlington | Neutron Inc
+   Domain: neutron.zone.id
+   ======================================== */
+
+/* 1. BASE - Reset & Variables */
+@import url("src/base/reset.css");
+@import url("src/base/variables.css");
+@import url("src/base/typography.css");
+
+/* 2. UTILITIES - Flex, Grid, Spacing, etc. */
+@import url("src/utilities/display.css");
+@import url("src/utilities/flex.css");
+@import url("src/utilities/grid.css");
+@import url("src/utilities/spacing.css");
+@import url("src/utilities/sizing.css");
+@import url("src/utilities/position.css");
+@import url("src/utilities/animations.css");
+
+/* 3. COMPONENTS - Pre-built blocks */
+@import url("src/components/buttons.css");
+@import url("src/components/cards.css");
+@import url("src/components/forms.css");
+@import url("src/components/alerts.css");
+@import url("src/components/modals.css");
+@import url("src/components/navigation.css");
+
+/* 4. THEMES - Dark/Light mode */
+@import url("src/themes/light.css");
+@import url("src/themes/dark.css");
+
+/* 5. CONTAINER UTILITY */
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+/* Responsive Container */
+@media (min-width: 640px) {
+  .container {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
+}
+
+/* 6. HELPER UTILITIES */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

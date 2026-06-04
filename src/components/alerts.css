@@ -1,0 +1,180 @@
+/* ========================================
+   ALERTS - Neutron CSS
+   ======================================== */
+
+/* Base Alert */
+.alert {
+  padding: var(--space-4) var(--space-6);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-4);
+  font-size: var(--text-sm);
+  position: relative;
+  transition: all var(--transition-normal);
+}
+
+/* Alert Variants - 10 styles */
+.alert-success {
+  background: #d1fae5;
+  color: #065f46;
+  border-left: 4px solid var(--neutron-success);
+}
+
+.alert-error {
+  background: #fee2e2;
+  color: #991b1b;
+  border-left: 4px solid var(--neutron-error);
+}
+
+.alert-warning {
+  background: #fef3c7;
+  color: #92400e;
+  border-left: 4px solid var(--neutron-warning);
+}
+
+.alert-info {
+  background: #dbeafe;
+  color: #1e40af;
+  border-left: 4px solid var(--neutron-info);
+}
+
+.alert-primary {
+  background: #ede9fe;
+  color: #5b21b6;
+  border-left: 4px solid var(--neutron-primary);
+}
+
+.alert-secondary {
+  background: #f3e8ff;
+  color: #6b21a5;
+  border-left: 4px solid var(--neutron-secondary);
+}
+
+/* Solid Alerts */
+.alert-solid-success {
+  background: var(--neutron-success);
+  color: white;
+}
+
+.alert-solid-error {
+  background: var(--neutron-error);
+  color: white;
+}
+
+.alert-solid-warning {
+  background: var(--neutron-warning);
+  color: var(--neutron-gray-900);
+}
+
+.alert-solid-info {
+  background: var(--neutron-info);
+  color: white;
+}
+
+.alert-solid-primary {
+  background: var(--neutron-primary);
+  color: white;
+}
+
+/* Alert with Icon */
+.alert-icon {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.alert-icon::before {
+  font-size: var(--text-xl);
+}
+
+/* Dismissible Alert */
+.alert-dismissible {
+  padding-right: var(--space-12);
+}
+
+.alert-close {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-4);
+  background: none;
+  border: none;
+  font-size: var(--text-xl);
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.6;
+  transition: opacity var(--transition-fast);
+}
+
+.alert-close:hover {
+  opacity: 1;
+}
+
+/* Alert Title */
+.alert-title {
+  font-weight: 600;
+  margin-bottom: var(--space-1);
+  font-size: var(--text-base);
+}
+
+/* Alert Description */
+.alert-desc {
+  font-size: var(--text-sm);
+  opacity: 0.9;
+}
+
+/* Rounded Variants */
+.alert-rounded-sm {
+  border-radius: var(--radius-sm);
+}
+.alert-rounded-md {
+  border-radius: var(--radius-md);
+}
+.alert-rounded-lg {
+  border-radius: var(--radius-lg);
+}
+.alert-rounded-xl {
+  border-radius: var(--radius-xl);
+}
+.alert-rounded-full {
+  border-radius: var(--radius-full);
+}
+
+/* Outline Alerts */
+.alert-outline-success {
+  background: transparent;
+  border: 1px solid var(--neutron-success);
+  color: var(--neutron-success);
+}
+
+.alert-outline-error {
+  background: transparent;
+  border: 1px solid var(--neutron-error);
+  color: var(--neutron-error);
+}
+
+.alert-outline-warning {
+  background: transparent;
+  border: 1px solid var(--neutron-warning);
+  color: var(--neutron-warning);
+}
+
+.alert-outline-info {
+  background: transparent;
+  border: 1px solid var(--neutron-info);
+  color: var(--neutron-info);
+}
+
+/* Animation */
+.alert-slide-in {
+  animation: alertSlideIn 0.3s ease-out;
+}
+
+@keyframes alertSlideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
