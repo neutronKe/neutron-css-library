@@ -1,9 +1,9 @@
-# ⚡ Neutron CSS LIBRARY
+# ⚡ Neutron css Library
 
 A lightweight, modular CSS framework for rapid development.
 
 **Created by:** Darlington | Neutron Inc  
-**Domain:** [neutron.zone.id](https://neutron.zone.id)
+**Domain:** [neutron.co.ke](https://neutron.co.ke)
 
 ## Features
 
@@ -19,11 +19,21 @@ A lightweight, modular CSS framework for rapid development.
 
 ### CDN
 
-````html
+```html
 <link
   rel="stylesheet"
   href="https://neutron-css-library.neutronkenya.workers.dev/neutron.min.css"
 />
+```
 
-## Installation ### Via npm ```bash npm install neutron-css
-````
+## Installation Via npm
+
+```
+npm install neutron-css
+
+```
+
+```
+
+
+```
