@@ -3,7 +3,7 @@
 A lightweight, modular CSS framework for rapid development.
 
 **Created by:** Darlington | Neutron Inc  
-**Domain:** [neutron.co.ke](https://neutron.co.ke)
+**Domain:** [neutroninc.top](https://neutroninc.top)
 
 ## Features
 
@@ -20,10 +20,7 @@ A lightweight, modular CSS framework for rapid development.
 ### CDN
 
 ```html
-<link
-  rel="stylesheet"
-  href="https://neutron-css-library.neutronkenya.workers.dev/neutron.min.css"
-/>
+<link rel="stylesheet" href="https://cdn.neutroninc.top/neutron.min.css" />
 ```
 
 ## Installation Via npm
